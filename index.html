@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en"data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Daisy + Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e3ed37775e.js" crossorigin="anonymous"></script>
+<!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary': '#E76F51',
+                'byp': '#E76F51',
+              }
+            }
+          }
+        }
+      </script>
+<!-- CSS File  -->
+    <link rel="stylesheet" href="CSS/style.css">
+    
+<!-- Style CSS  -->
+<style>
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+</style>
+
+<title>Assignment_5</title>
+
+</head>
+<body class="poppins-thin">
+  
+<header class="pt-2 pb-2">
+  <nav class="bg-white rounded-xl ml-14 mr-14">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        </div>
+          <div class="flex shrink-0 items-center gap-1">
+            <img class="h-8 w-auto " src="IMG/logo.png" alt="Your Company"> <span class="text-xl">Dev</span><span class="text-xl font-bold -ml-1">Board</span>
+          </div>
+          <div class="relative ml-3">
+            <div class="flex items-center  gap-4">
+              <div class="pl-2 pr-2 " style="border-radius: 18px; background: rgb(244, 247, 255);">
+               <input type="checkbox" checked="checked" class="" name="" id="">
+                <span class="text-xl" id="taskCompletedCount">23</span>
+              </div>
+              <div>
+              <button id="btn"><img class="size-8 rounded-full" src="IMG/theme-btn.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<section class=" ml-14 mr-14 pb-7 ">
+  <div class="grid grid-cols-2">
+
+
+  <div class="bg-white mt-2 rounded-xl  -mr-64">
+
+      <div class="flex"> 
+        
+        <div class="bg-[#F4F7FF] rounded-md m-4 flex mb-10">
+          <div class="bg-white rounded-full mt-10 ml-4 mb-16 p-2"><input type="checkbox" checked="checked" class="m-2" name="" id=""></div>
+          <div class=" ml-5 mt-10 mr-5">
+            <span class="text-sm">Task Assigned</span><br>
+            <span class="font-bold">0</span><span id="taskAssigned" class="font-bold">6</span>
+          </div>
+        </div>
+
+        <form  class="forom mt-4 ml-2  mb-10">
+          <a href="html/index _two.html">
+            <div class="flex p-2 mr-20">
+              <img src="IMG/board.png" alt="" class="mt-8 ml-3 w-16 h-14">
+              <div class="w-52"><p  class="text-sm pt-10 ml-5  text-white">Discover Something<br>New Today!</p></div>
+            </div>
+          </a>
+        </form>
+
+        <div class="bg-[#F4F7FF] rounded-md ml-4 mt-4 p-5 mb-10 flex ">
+          <div class="bg-white  rounded-full mt-3 px-3 pt-3 mb-10">
+            <img  src="IMG/calender.png" alt="">
+          </div>
+          <div class="w-28 mt-4 ml-5"> <span> Wed,
+            <br>
+            Jul 28 2025
+          </span></div>
+        </div>
+      </div>
+<div style="color: #3752FD33;">__________________________________________________________________________</div>
+      <div class="grid grid-cols-3 p-3 gap-5 mt-5 mb-2 ">
+        <div class="bg-[#F4F7FF]  p-5 rounded">
+            <p class=" bg-white rounded-lg p-2 mr-32">ShopEase</p>
+            <h2  class="font-semibold font-bold my-2">Fix Mobile Button Issue</h2>
+            <p class="bg-white p-3 text-slate-600"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div style="color: #3752FD33;">____________________</div>
+            <div class="flex">
+              <p>Deadline <br>
+                <span class="font-bold text-sm">21 March 2025 </span></p>
+              <button class="completed-btn bg-[#3752FD] text-white px-3 py-2 rounded ml-3 mt-2">Completed</button>
+            </div>
+        </div>
+        <div class="bg-[#F4F7FF] p-5 rounded">
+            <p class=" bg-white rounded-lg p-2 mr-32">Soft Pay</p>
+            <h2 class="font-semibold font-bold my-2">Add Pay Success Modal</h2>
+            <p class="bg-white p-3 text-slate-600"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div style="color: #3752FD33;">____________________</div>
+            <div class="flex">
+              <p>Deadline <br>
+                <span class="font-bold text-sm">21 March 2025 </span></p>
+              <button class="completed-btn bg-[#3752FD] text-white px-3 py-2 rounded ml-3 mt-2">Completed</button>
+            </div>
+        </div>
+        <div class="bg-[#F4F7FF] p-5 rounded">
+            <p class=" bg-white rounded-lg p-2 mr-10">Programming Hero</p>
+            <h2 class="font-semibold font-bold my-2">Fix Video Loading Issue</h2>
+            <p class="bg-white p-3 text-slate-600"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div style="color: #3752FD33;">____________________</div>
+            <div class="flex">
+              <p>Deadline <br>
+                <span class="font-bold text-sm">21 March 2025 </span></p>
+              <button class="completed-btn bg-[#3752FD] text-white px-3 py-2 rounded ml-3 mt-2">Completed</button>
+            </div>
+        </div>
+        <div class="bg-[#F4F7FF] p-5 rounded">
+            <p class=" bg-white rounded-lg p-2 mr-28">Google LLC</p>
+            <h2 class="font-semibold font-bold my-2">Integrate AI Search</h2>
+            <p class="bg-white p-3 text-slate-600"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div style="color: #3752FD33;">____________________</div>
+            <div class="flex">
+              <p>Deadline <br>
+                <span class="font-bold text-sm">21 March 2025 </span></p>
+              <button class="completed-btn bg-[#3752FD] text-white px-3 py-2 rounded ml-3 mt-2">Completed</button>
+            </div>
+        </div>
+        <div class="bg-[#F4F7FF] p-5 rounded">
+            <p class=" bg-white rounded-lg p-2 mr-32">Meta</p>
+            <h2 class="font-semibold font-bold my-2">Add New Reaction</h2>
+            <p class="bg-white p-3 text-slate-600"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div style="color: #3752FD33;">____________________</div>
+            <div class="flex">
+              <p>Deadline <br>
+                <span class="font-bold text-sm">21 March 2025 </span></p>
+              <button class="completed-btn bg-[#3752FD] text-white px-3 py-2 rounded ml-3 mt-2">Completed</button>
+            </div>
+        </div>
+        <div class="bg-[#F4F7FF] p-5 rounded">
+            <p class=" bg-white rounded-lg p-2 mr-24">Polygon Tech</p>
+            <h2 class="font-semibold font-bold my-2">Review Ami Probashi Site</h2>
+            <p class="bg-white p-3 text-slate-600"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div style="color: #3752FD33;">____________________</div>
+            <div class="flex">
+              <p>Deadline <br>
+                <span class="font-bold text-sm">21 March 2025 </span></p>
+              <button class="completed-btn bg-[#3752FD] text-white px-3 py-2 rounded ml-3 mt-2">Completed</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-md grid grid-cols-1 mt-2 ml-72 ">
+      <div class="flex  p-4 gap-2 ml-10">
+        <img src="IMG/activity.png" class="w-8 h-8" alt="">
+        <p class="text-xl font-bold ">Activity Log</p>
+      </div>
+      <div class="ml-20 p-4 -mt-96 gap-2">
+        <button id="clearHistory" class="bg-[#3752FD] text-white px-3 py-2 rounded">Clear History</button>
+        <div class="-ml-24" style="color: #3752FD33;">____________________________</div>
+        <div id="activityLog" class="rounded-md font-bold mt-2 -ml-14 p-5 mb-8 bg-[#F4F7FF] "></div>
+      </div>
+  </div>
+</div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const completedButtons = document.querySelectorAll(".completed-btn");
+    const taskAssignedCount = document.getElementById("taskAssigned");
+    const taskCompletedCount = document.getElementById("taskCompletedCount");
+    const activityLog = document.getElementById("activityLog");
+    const clearHistoryBtn = document.getElementById("clearHistory");
+    let taskCount = parseInt(taskAssignedCount.textContent);
+    let completedCount = parseInt(taskCompletedCount.textContent);
+
+    completedButtons.forEach(button => {
+        button.addEventListener("click", function () {
+         
+            let taskName = this.parentElement.parentElement.querySelector("h2").textContent;
+            let currentTime = new Date().toLocaleTimeString();
+            
+          
+            let logEntry = document.createElement("p");
+            logEntry.textContent = `You have completed the task '${taskName}' at ${currentTime}`;
+            activityLog.appendChild(logEntry);
+
+          
+            taskCount--;
+            completedCount++;
+            taskAssignedCount.textContent = taskCount;
+            taskCompletedCount.textContent = completedCount;
+            
+          
+            this.disabled = true;
+            this.textContent = "Completed";
+            this.classList.add("opacity-50", "cursor-not-allowed");
+
+      
+            alert("Board update successfully");
+
+            
+            if (taskCount === 0) {
+                alert("Congrats!! You have completed all the current tasks");
+            }
+        });
+    });
+
+
+    clearHistoryBtn.addEventListener("click", function () {
+        activityLog.innerHTML = "";
+    });
+});
+</script>
+<script>
+  let pritom =['#bcf19f','#9fe2f1','#a19ff1','#d09ff1','#ea6c9e','#e5ea6c','#ea996c','#389c82','#b9d342'];
+
+  let i = 0;
+  document.getElementById('btn').addEventListener("click",function(){
+    i = i < pritom.length ? ++i : 0;
+    
+    document.body.style.background = pritom[i];
+  })
+</script>
+</body>
+</html>
