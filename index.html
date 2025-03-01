@@ -98,10 +98,7 @@
           <div class="bg-white  rounded-full mt-3 px-3 pt-3 mb-10">
             <img  src="IMG/calender.png" alt="">
           </div>
-          <div class="w-28 mt-4 ml-5"> <span> Wed,
-            <br>
-            Jul 28 2025
-          </span></div>
+          <div class="date w-28 mt-4 ml-5"></div>
         </div>
       </div>
 <div style="color: #3752FD33;">__________________________________________________________________________</div>
@@ -207,7 +204,7 @@
             
           
             let logEntry = document.createElement("p");
-            logEntry.textContent = `You have completed the task '${taskName}' at ${currentTime}`;
+            logEntry.textContent = `You have completed the task ${taskName} at ${currentTime}`;
             activityLog.appendChild(logEntry);
 
           
@@ -237,15 +234,6 @@
     });
 });
 </script>
-<script>
-  let pritom =['#bcf19f','#9fe2f1','#a19ff1','#d09ff1','#ea6c9e','#e5ea6c','#ea996c','#389c82','#b9d342'];
-
-  let i = 0;
-  document.getElementById('btn').addEventListener("click",function(){
-    i = i < pritom.length ? ++i : 0;
-    
-    document.body.style.background = pritom[i];
-  })
-</script>
+<script src="JS/input.js"></script>
 </body>
 </html>
